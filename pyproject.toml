@@ -9,7 +9,9 @@ description = "A mockup"
 authors = [
     {name = "Yann BLAUDIN DE THE", email = "yann.blaudin-de-the@thalesaleniaspace.com"},
 ]
-dependencies = []
+dependencies = [
+    "rich>=13.4.2",
+]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
@@ -91,8 +93,8 @@ test = [
 site_packages = true
 doc.shell = """\
     mkdir -p htmldoc/talismans
-    pdoc --html --force --config latex_math=True --template-dir docs/template -o htmldoc talismans
+    pdoc --html --force --config latex_math=True -o htmldoc talismans
     coverage html -d htmldoc/coverage --rcfile tests/coverage.conf
-    docstr-coverage talismans -miP -sp -is -idel --skip-file-doc --exclude ".*/kt.*.py" --badge=htmldoc/talismans/doc_badge.svg
+    docstr-coverage src/talismans -miP -sp -is -idel --skip-file-doc --exclude ".*/kt.*.py" --badge=htmldoc/talismans/doc_badge.svg
     coverage-badge -f -o htmldoc/talismans/cov_badge.svg
 """

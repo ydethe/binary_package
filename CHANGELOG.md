@@ -12,5 +12,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- Added changelog ([8302023](ssh://git@git:7999/~blaudiy/talismans/commit/8302023de4cf834d7f49760298a241580c49c58d) by Yann BLAUDIN DE THE).
+- Added CHANGELOG ([1560b2c](ssh://git@git:7999/~blaudiy/talismans/commit/1560b2c051c6562b9059dbb0424d166641fbf9e8) by Yann BLAUDIN DE THE).
 
