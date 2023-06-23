@@ -1,11 +1,13 @@
 [build-system]
-requires = [
-    "pdm-backend>=2.1.0,<3.0.0",
-    "setuptools>=68.0.0,<69.0.0",
-    "pybind11>=2.10.4,<3.0.0",
-    "mypy>=1.4.0,<2.0.0"
-]
-build-backend = "pdm.backend"
+# requires = [
+#     "pdm-backend>=2.1.0,<3.0.0",
+#     "setuptools>=68.0.0,<69.0.0",
+#     "pybind11>=2.10.4,<3.0.0",
+#     "mypy>=1.4.0,<2.0.0"
+# ]
+# build-backend = "pdm.backend"
+requires = ["setuptools>=42", "wheel", "nuitka", "toml", "pybind11>=2.10.4,<3.0.0","setuptools_scm[toml]>=6.2"]
+build-backend = "nuitka.distutils.Build"
 
 [project]
 name = "talismans"
@@ -27,14 +29,13 @@ license = {text = "MIT"}
 Homepage = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 
-[tool.cibuildwheel.config-settings]
---build-option = "--use-mypyc"
-
 [tool.cibuildwheel]
 build-frontend = "build"
 
 [tool.cibuildwheel.macos]
 archs = ["auto", "universal2"]
+
+[tool.setuptools_scm]
 
 [tool.pdm.version]
 source = "scm"
