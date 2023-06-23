@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <small>[Compare with v0.1.1]()</small>
 
+### Added
+
+- Added pybind11 in pdm-build.py ([9793a78](ssh://git@git:7999/~blaudiy/talismans/commit/9793a78936406563e7f9d303dfa0bd40f9932c96) by Yann BLAUDIN DE THE).
+
 ### Fixed
 
 - Fixing GHA ([12878bf](ssh://git@git:7999/~blaudiy/talismans/commit/12878bf9cd2472e065cd797959bbd36ebf4db0e8) by Yann BLAUDIN DE THE).

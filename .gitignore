@@ -3,6 +3,7 @@ test_results.xml
 .pdm-python
 pdm.lock
 tests/output
+*.exe
 
 *.db
 __pypackages__
