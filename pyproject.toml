@@ -1,5 +1,5 @@
 [build-system]
-requires = ["pdm-backend"]
+requires = ["pdm-backend>=2.1.0,<3.0.0", "setuptools>=68.0.0,<69.0.0", "pybind11>=2.10.4,<3.0.0"]
 build-backend = "pdm.backend"
 
 [project]
@@ -25,6 +25,7 @@ Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 source = "scm"
 
 [tool.pdm.build]
+run-setuptools = true
 editable-backend = "editables"
 excludes = [
     "tests",
