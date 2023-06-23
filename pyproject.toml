@@ -1,5 +1,10 @@
 [build-system]
-requires = ["pdm-backend>=2.1.0,<3.0.0", "setuptools>=68.0.0,<69.0.0", "pybind11>=2.10.4,<3.0.0"]
+requires = [
+    "pdm-backend>=2.1.0,<3.0.0",
+    "setuptools>=68.0.0,<69.0.0",
+    "pybind11>=2.10.4,<3.0.0",
+    "mypy>=1.4.0,<2.0.0"
+]
 build-backend = "pdm.backend"
 
 [project]
@@ -25,9 +30,6 @@ Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 [tool.pdm.version]
 source = "scm"
 
-[tool.cibuildwheel]
-before-build = "pip install pybind11"
-
 [tool.pdm.build]
 run-setuptools = true
 editable-backend = "editables"
@@ -37,8 +39,9 @@ excludes = [
     "build",
     "dev",
     "dist",
-    "*.c",
-    "*.cpp"
+    "**/*.c",
+    "**/*.cpp",
+    '**/*.py'
 ]
 
 [tool.pylint.format]

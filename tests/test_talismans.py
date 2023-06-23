@@ -36,7 +36,7 @@ def test_py():
 
 
 if __name__ == "__main__":
-    # test_c_add()
-    # test_c_norm()
-    # test_py()
+    test_c_add()
+    test_c_norm()
+    test_py()
     test_c_class()
