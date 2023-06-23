@@ -27,6 +27,13 @@ license = {text = "MIT"}
 Homepage = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 
+[tool.cibuildwheel.config-settings]
+--build-option = "--use-mypyc"
+build-frontend = "build"
+
+[tool.cibuildwheel.macos]
+archs = ["auto", "universal2"]
+
 [tool.pdm.version]
 source = "scm"
 
