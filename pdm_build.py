@@ -1,7 +1,9 @@
 from setuptools import Extension
 
 
-ext_modules = [Extension("talismans.hello", ["src/talismans/hellomodule.cpp"])]
+ext_modules = [
+    Extension("talismans.hello", ["src/talismans/hellomodule.cpp", "src/talismans/example.cpp"])
+]
 
 
 def pdm_build_update_setup_kwargs(context, setup_kwargs):

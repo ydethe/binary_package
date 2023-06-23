@@ -2,31 +2,14 @@
 #include <pybind11/numpy.h>
 #include <pybind11/pybind11.h>
 
-namespace py = pybind11;
+#include "example.h"
 
-class Example
-{
-private:
-    int a;
-
-public:
-    Example()
-    {
-        a = 0;
-    }
-
-    void process()
-    {
-        a += 1;
-    }
-
-    int getResult()
-    {
-        return a;
-    }
-};
 
 // See https://pybind11.readthedocs.io/en/stable/index.html for help about C++ wrapping
+namespace py = pybind11;
+
+
+
 int add(int i, int j)
 {
     return i + j;
@@ -51,14 +34,14 @@ std::shared_ptr<Example> create_example()
 
 PYBIND11_MODULE(hello, m)
 {
-    m.doc() = "pybind11 example plugin"; // optional module docstring
+    m.doc() = "Talismans example plugin"; // optional module docstring
 
-    py::class_<Example, std::shared_ptr<Example>>(m, "Example")
+    py::class_<Example, std::shared_ptr<Example>>(m, "Example", "Example C++ class docstring for Talismans")
         .def(py::init<>())
-        .def("process", &Example::process)
-        .def("getResult", &Example::getResult);
+        .def("process", &Example::process, "Process one batch of data")
+        .def("getResult", &Example::getResult, "Get the result of the processing");
 
     m.def("add", &add, "A function that adds two numbers");
     m.def("norm", &norm, "A function that computes the euclidian norm of a vector");
-    m.def("create_example", &create_example);
+    m.def("create_example", &create_example, "A function that creates an instance of the Example C++ class");
 }
