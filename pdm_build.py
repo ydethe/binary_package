@@ -26,7 +26,7 @@ def pdm_build_update_setup_kwargs(context: Context, setup_kwargs: dict):
             )
         ]
         setup_kwargs.update(
-            setup_requires=["nuitka"],
+            setup_requires=["nuitka", "pybind11"],
             build_with_nuitka=True,
             ext_modules=ext_modules,
         )
