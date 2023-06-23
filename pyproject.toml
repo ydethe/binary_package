@@ -29,6 +29,8 @@ Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 
 [tool.cibuildwheel.config-settings]
 --build-option = "--use-mypyc"
+
+[tool.cibuildwheel]
 build-frontend = "build"
 
 [tool.cibuildwheel.macos]

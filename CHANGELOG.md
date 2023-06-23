@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-- Fixing GHA ([79551b0](ssh://git@git:7999/~blaudiy/talismans/commit/79551b0811b4059854990b4947e3bbc5fe7730ac) by Yann BLAUDIN DE THE).
+- Fixing GHA ([766b300](ssh://git@git:7999/~blaudiy/talismans/commit/766b3007fb0268c87022509f4beca17f0b104f3d) by Yann BLAUDIN DE THE).
 
 ## [v0.1.1]() - 2023-06-23
 
