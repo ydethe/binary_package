@@ -1,5 +1,6 @@
 from setuptools import Extension
 
+
 ext_modules = [Extension("talismans.hello", ["src/talismans/hellomodule.cpp"])]
 
 
