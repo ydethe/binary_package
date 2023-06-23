@@ -38,10 +38,12 @@ excludes = [
     "examples",
     "build",
     "dev",
-    "dist",
+    "dist"
+]
+source-includes = [
     "**/*.c",
     "**/*.cpp",
-    '**/*.py'
+    "**/*.py"
 ]
 
 [tool.pylint.format]
