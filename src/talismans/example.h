@@ -1,5 +1,6 @@
 // example.h
 
+
 class Example
 {
 private:

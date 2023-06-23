@@ -25,6 +25,9 @@ Source = "https://git:8443/projects/DNFSND/repos/talismans/browse"
 [tool.pdm.version]
 source = "scm"
 
+[tool.cibuildwheel]
+before-build = "pip install pybind11"
+
 [tool.pdm.build]
 run-setuptools = true
 editable-backend = "editables"
@@ -34,6 +37,8 @@ excludes = [
     "build",
     "dev",
     "dist",
+    "*.c",
+    "*.cpp"
 ]
 
 [tool.pylint.format]
