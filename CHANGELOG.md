@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## [0.1.0](0.1.0) - 2023-06-23
+## [v0.1.1]() - 2023-06-23
+
+<small>[Compare with v0.1.0]()</small>
+
+### Removed
+
+- Removed source from whl ([84daa01](ssh://git@git:7999/~blaudiy/talismans/commit/84daa016939847354ce3183768c81e58df60e055) by Yann BLAUDIN DE THE).
+
+## [v0.1.0]() - 2023-06-23
 
 <small>[Compare with first commit]()</small>
 

@@ -38,7 +38,8 @@ excludes = [
     "examples",
     "build",
     "dev",
-    "dist"
+    "dist",
+    ".gitignore"
 ]
 source-includes = [
     "**/*.c",
