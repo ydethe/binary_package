@@ -45,7 +45,7 @@ jobs:
 
     - uses: pypa/cibuildwheel@v2.13.0
       env:
-        CIBW_BEFORE_BUILD: curl -sSL https://raw.githubusercontent.com/pdm-project/pdm/main/install-pdm.py | python3 - && pdm install
+        CIBW_BEFORE_BUILD: curl -sSL https://raw.githubusercontent.com/pdm-project/pdm/main/install-pdm.py | python3 - && /root/.local/bin/pdm install
         CIBW_CONFIG_SETTINGS: --no-build-isolation
         CIBW_BUILD_FRONTEND: pip
         CIBW_ARCHS_MACOS: auto universal2
