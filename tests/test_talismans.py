@@ -4,13 +4,13 @@ def test_c_add():
     assert add(2, 3) == 5
 
 
-# def test_c_norm():
-#     import numpy as np
-#     from talismans.hello import norm
+def test_c_norm():
+    import numpy as np
+    from talismans.hello import norm
 
-#     v = np.array([3, 4])
+    v = np.array([3, 4])
 
-#     assert norm(v) == 5
+    assert norm(v) == 5
 
 
 def test_c_class():
@@ -37,6 +37,6 @@ def test_py():
 
 if __name__ == "__main__":
     test_c_add()
-    # test_c_norm()
+    test_c_norm()
     test_py()
     test_c_class()

@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "pdm-backend>=2.1.0,<3.0.0",
-    "setuptools>=68.0.0,<69.0.0",
+    "setuptools>=67.0.0,<69.0.0",
     "pybind11>=2.10.4,<3.0.0",
     "nuitka",
     "wheel",
