@@ -3,7 +3,7 @@ from pdm.backend.hooks.base import Context
 
 
 def pdm_build_update_setup_kwargs(context: Context, setup_kwargs: dict):
-    if context.target == "wheel":
+    if context.target != "sdist":
         ext_modules = [
             Extension(
                 "talismans.hello",
