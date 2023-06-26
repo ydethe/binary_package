@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [v0.2.0]() - 2023-06-26
+
+<small>[Compare with v0.1.2]()</small>
+
+### Added
+
+- Added example of direct linking with pybind11 .so ([7c45d7a](ssh://git@git:7999/~blaudiy/talismans/commit/7c45d7aa36b08e46294c946026505f095d9e3306) by Yann BLAUDIN DE THE).
+
 ## [v0.1.2]() - 2023-06-23
 
 <small>[Compare with v0.1.1]()</small>
