@@ -1,11 +1,11 @@
-from setuptools import Extension
 from pdm.backend.hooks.base import Context
+from pybind11.setup_helpers import Pybind11Extension
 
 
 def pdm_build_update_setup_kwargs(context: Context, setup_kwargs: dict):
     if context.target != "sdist":
         ext_modules = [
-            Extension(
+            Pybind11Extension(
                 "talismans.hello",
                 ["src/talismans/hellomodule.cpp", "src/talismans/example.cpp"],
             )
